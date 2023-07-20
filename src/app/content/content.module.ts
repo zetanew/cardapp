@@ -10,6 +10,9 @@ import { ContentListComponent } from './content-list/content-list.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    ContentListComponent
   ]
 })
 export class ContentModule { }
