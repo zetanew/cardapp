@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
    title : string ="tittle buraya";
 
+   ngOnInit(): void {
+    this.setTitle();
+  }
+   setTitle():void{
+    this.title="Yeni titlee";
+   }
 }
