@@ -10,7 +10,7 @@ export class ContactComponent {
   constructor(private userService:UserService){
   }
   usersState:any=[];
-
+  today=Date.now();
   ngOnInit():void{
   this.getusers();
   }
