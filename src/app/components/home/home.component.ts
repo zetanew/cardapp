@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  dizi:any=[];
+  
+
+  ngOnInit():void{
+    this.dizi=["ali" , "veli" , "deli"];
+  }
+
 }

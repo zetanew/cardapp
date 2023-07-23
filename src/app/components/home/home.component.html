@@ -1,2 +1,12 @@
 <p>home works!</p>
 <app-content-list/>
+
+<div [ngClass]="'class1 class2'">Ng class example</div>
+<div [ngClass]="['class1 ,class2']">Ng class example 2</div>
+<div [ngClass]="{'class1' : true , 'class2' : false , 'class3' : 3>2}">Ng class example 3</div>
+
+<div [ngStyle]="{'font-weight' :800}">Kalın stil</div>
+
+<ul>
+    <li *ngFor="let eleman of dizi">{{eleman}}</li>
+</ul>
