@@ -8,7 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContentModule } from './content/content.module';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,9 @@ import { ContentModule } from './content/content.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ContentModule
+    ContentModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

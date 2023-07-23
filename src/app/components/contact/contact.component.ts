@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  constructor(private userService:UserService){
+  }
+  usersState:any=[];
+
+  ngOnInit():void{
+  this.getusers();
+  }
+  getusers(){
+    this.userService.getUsers()
+    .subscribe((res:any) =>{
+      console.log(res);
+      this.usersState=res;
+    })
+  }
 
 }
