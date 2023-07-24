@@ -9,13 +9,15 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContentModule } from './content/content.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AvatarPipe } from './pipes/avatar.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    AvatarPipe
   ],
   imports: [
     BrowserModule,
